@@ -29,6 +29,12 @@ export default {
     extend: {
       dropShadow: {
         'dark': '0 3px 2px rgba(0, 0, 0, 0.25)',
+      },
+      textColor: {
+        'transparent': 'transparent',
+      },
+      width: {
+        '120': '30rem',
       }
     },
   },
