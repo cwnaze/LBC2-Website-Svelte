@@ -1,6 +1,7 @@
 <script lang='ts'>
     import Carousel from 'svelte-carousel';
     import { browser } from '$app/environment';
+    import Navbar from '$lib/components/navbar.svelte';
   
     let carousel: any; // for calling methods of the carousel instance
     
@@ -10,22 +11,12 @@
 
     let imgNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   </script>
-
-<div class='p-3 bg-blue-100 drop-shadow-dark flex justify-between items-center'>
-    <img src='/images/logo.png' class='w-auto h-16 py-2' alt='LBC2 Logo'>
-    <ul class='flex gap-12 text-yellow-200 justify-center ml-auto text-xl'>
-        <li class="hover:underline"><a href="#">Home</a></li>
-        <li class="hover:underline"><a href="#">Details</a></li>
-        <li class="hover:underline"><a href="#">Past Competitions</a></li>
-        <li class="hover:underline"><a href="#">LBCSI</a></li>
-        <li class="hover:underline"><a href="#">Sign Up</a></li>
-    </ul>
-</div>
+<Navbar/>
 <div class="flex gap-16 justify-center items-center mt-8">
     <div class="flex flex-col items-center">
         <h1 class="text-yellow-100 text-6xl font-black text-center"><section class="bg-gradient-to-t from-yellow-200 to-yellow-100 bg-clip-text text-transparent">Loyola Blakefield</section> Cyber Challenge</h1>
         <p class="text-white text-3xl text-center mt-8">March 29th, 2025 @ Loyola Blakefield</p>
-        <button class="bg-yellow-200 text-blue-100 font-bold mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Sign Up</button>
+        <button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Sign Up</button>
     </div>
     <img src="/images/DSC00615.JPG" alt="Hero Image" class="h-96 w-auto rounded">
 </div>
@@ -80,7 +71,7 @@
     <img src="/images/lbcsiLogo.png" alt="LBCSI Logo" class="mx-auto mt-8">
     <div class="mr-20">
         <p class="text-white text-xl">The Loyola Blakefield Cyber Science Initiative (LBCSI) is a student-run group directed by Steve Morrill, Director of Technology & Cyber Science at Loyola Blakefield. The vision for this competition is to bring new opportunities to all students in the country, in addition to connecting the business world with a diverse talent pool. LBCSI has become the international leader in Cyber education for students in middle and high school.</p>
-        <button class="bg-yellow-200 text-blue-100 font-bold mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Learn More</button>
+        <button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Learn More</button>
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">Contact Us</h3>
         <p class="text-white text-xl mt-2">Head of LBCSI - <a href="mailto:smorrill@loyolablakefield.org" class="underline">Steve Morrill</a></p>
         <p class="text-white text-xl mt-2">Support Staff - <a href="mailto:lbc2staff@gmail.com" class="underline">lbc2staff@gmail.com</a></p>
@@ -101,6 +92,6 @@
             <label for="email" class="text-yellow-200 text-xl text-right">Email</label>
             <input type="email" placeholder="Email Address" class="bg-yellow-100 text-white p-3 rounded-lg w-120">
         </div>
-        <button class="bg-yellow-200 text-blue-100 font-bold p-2 px-16 rounded-lg border-4 border-yellow-200 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Join Newsletter</button>
+        <button class="bg-yellow-200 text-blue-100 text-xl font-black p-2 px-16 rounded-lg border-4 border-yellow-200 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Join Newsletter</button>
     </div>
 </form>
