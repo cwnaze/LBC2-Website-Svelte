@@ -29,5 +29,10 @@
     </ul>
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
 </div>
-<h2 class="text-yellow-200 text-4xl font-black m-8 mx-20 text-center">IOT City</h2>
-<p class="mx-20 text-center text-white text-xl mt-2 mb-8">The IoT (Internet of Things) City challenges were a resounding success. Consisting of six separate Capture the Flag style challenges with an IoT twist, ranging in difficulty from Intro to Advanced, the challenges tested competitors’ knowledge of both basic cybersecurity and IoT elements. The Internet of Things is an idea of how different appliances, or things, connect and communicate with each other. This can include your home security camera, phone, and even your toaster! This year, we featured a series of IOT-themed challenges revolving around common industrial “things”, such as traffic lights, billboards, and a water tower.</p>
+<div class="flex mx-20 items-center justify-center mb-8">
+    <img src="/images/IOT.jpeg" alt="IOT City" class="h-auto w-96 rounded">
+    <div>
+        <h2 class="text-yellow-200 text-4xl font-black m-8 mx-20 text-center">IOT City</h2>
+        <p class="mx-20 text-center text-white text-xl mt-2 mb-8">The IoT (Internet of Things) City challenges were a resounding success. Consisting of six separate Capture the Flag style challenges with an IoT twist, ranging in difficulty from Intro to Advanced, the challenges tested competitors’ knowledge of both basic cybersecurity and IoT elements. The Internet of Things is an idea of how different appliances, or things, connect and communicate with each other. This can include your home security camera, phone, and even your toaster! This year, we featured a series of IOT-themed challenges revolving around common industrial “things”, such as traffic lights, billboards, and a water tower.</p>
+    </div>
+</div>
