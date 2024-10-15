@@ -61,7 +61,7 @@
       swiping={false}
     >
       {#each imgNum as index}
-        <img src={`/images/carousel/image${index}.jpeg`} alt={`Image ${index}`} class="my-8 object-cover rounded ml-4"/>
+        <img src={`/images/2024/image${index}.jpeg`} alt={`Image ${index}`} class="my-8 object-cover rounded ml-4"/>
       {/each}
     </Carousel>
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
