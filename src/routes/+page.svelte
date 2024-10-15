@@ -1,6 +1,5 @@
 <script lang='ts'>
     import Carousel from 'svelte-carousel';
-    import { browser } from '$app/environment';
     import Navbar from '$lib/components/navbar.svelte';
   
     let carousel: any; // for calling methods of the carousel instance
