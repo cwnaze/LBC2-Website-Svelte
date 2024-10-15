@@ -13,12 +13,12 @@
 
 <Navbar/>
 <div>
-    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">2024</h2>
+    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">LBC2 2024 Photos</h2>
     <Carousel
       bind:this={carousel}
       particlesToShow={5}
       autoplayDuration={0}
-      duration={7000}
+      duration={6000}
       autoplay
       timingFunction="linear"
       dots={false}
@@ -26,17 +26,17 @@
       swiping={false}
     >
       {#each imgNum as index}
-        <img src={`/images/2024/image${index}.jpeg`} alt={`Image ${index}`} class="my-8 object-cover rounded ml-4"/>
+        <img src={`/images/2024/image${index}.jpeg`} alt={`Image ${index}`} class="my-4 object-cover rounded ml-4"/>
       {/each}
     </Carousel>
 </div>
 <div>
-    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">2023</h2>
+    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">LBC2 2023 Photos</h2>
     <Carousel
       bind:this={carousel}
       particlesToShow={3}
       autoplayDuration={0}
-      duration={7000}
+      duration={19200}
       autoplay
       timingFunction="linear"
       dots={false}
@@ -44,17 +44,17 @@
       swiping={false}
     >
       {#each imgNum as index}
-        <img src={`/images/2023/image${index}.jpeg`} alt={`Image ${index}`} class="my-8 object-cover rounded ml-4"/>
+        <img src={`/images/2023/image${index}.jpeg`} alt={`Image ${index}`} class="my-4 object-cover rounded ml-4"/>
       {/each}
     </Carousel>
 </div>
 <div>
-    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">2022</h2>
+    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">LBC2 2022 Photos</h2>
     <Carousel
       bind:this={carousel}
       particlesToShow={3}
       autoplayDuration={0}
-      duration={7000}
+      duration={9600}
       autoplay
       timingFunction="linear"
       dots={false}
@@ -62,7 +62,7 @@
       swiping={false}
     >
       {#each imgNum as index}
-        <img src={`/images/2022/image${index}.jpeg`} alt={`Image ${index}`} class="my-8 object-cover rounded ml-4"/>
+        <img src={`/images/2022/image${index}.jpeg`} alt={`Image ${index}`} class="my-4 object-cover rounded ml-4"/>
       {/each}
     </Carousel>
 </div>
