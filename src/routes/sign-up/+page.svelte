@@ -1,5 +1,7 @@
 <script lang="ts">
     import Navbar from "$lib/components/navbar.svelte";
+
+    /** @type {import('./$types').ActionData} */
     export let form;
 </script>
 
@@ -12,25 +14,33 @@
         <div class='flex flex-col'>
             <label for='team-name'>Team Name</label>
             <input id='team-name' placeholder='John Doe Team' name='team-name' type='text' value={form?.t_name ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
+            {#if form?.t_name_missing}<p class='text-error'>Team name is required</p>{/if}
+            {#if form?.t_name_exists}<p class='text-error'>Team name already exists</p>{/if}
         </div>
         <div class='flex flex-col'>
             <label for='experience-level'>Experience Level</label>
             <select id='experience-level' name='experience-level' class='bg-yellow-100 rounded-lg text-blue-100 p-3'>
                 <option value='beginner'>Beginner</option>
-                <option value='advanced'>I've Done CTFs Before</option>
+                {#if form?.e_level === 'advanced'}<option value='advanced' selected>I've Done CTFs Before</option>
+                {:else}<option value='advanced'>I've Done CTFs Before</option>{/if}
         </div>
         <div class='flex gap-10'>
             <div class='flex flex-col'>
                 <label for='tl-name'>Team Lead Name</label>
                 <input id='tl-name' placeholder='John Doe' name='tl-name' type='text' value={form?.tl_name ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
+                {#if form?.tl_name_missing}<p class='text-error'>Team lead name is required</p>{/if}
+                {#if form?.tl_name_exists}<p class='text-error'>Team lead is already registered</p>{/if}
             </div>
             <div class='flex flex-col'>
                 <label for='tl-school'>Team Lead School</label>
                 <input id='tl-school' placeholder='John Doe High' name='tl-school' type='text' value={form?.tl_school ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
+                {#if form?.tl_school_missing}<p class='text-error'>Team lead school is required</p>{/if}
             </div>
             <div class='flex flex-col'>
                 <label for='tl-email'>Team Lead Email</label>
                 <input id='tl-email' placeholder='jdoe@mail.com' name='tl-email' type='text' value={form?.tl_email ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
+                {#if form?.tl_email_missing}<p class='text-error'>Team lead email is required</p>{/if}
+                {#if form?.tl_email_invalid}<p class='text-error'>Invalid email</p>{/if}
             </div>
         </div>
         <div class='flex flex-col'>
