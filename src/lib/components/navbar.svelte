@@ -4,7 +4,7 @@
         <li class="hover:underline"><a href="/">Home</a></li>
         <li class="hover:underline"><a href="/details">Details</a></li>
         <li class="hover:underline"><a href="/past-competitions">Past Competitions</a></li>
-        <li class="hover:underline"><a href="#">LBCSI</a></li>
+        <li class="hover:underline"><a href="/lbcsi">LBCSI</a></li>
         <li class="hover:underline"><a href="#">Sign Up</a></li>
     </ul>
 </div>
