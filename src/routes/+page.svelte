@@ -70,7 +70,7 @@
     <img src="/images/lbcsiLogo.png" alt="LBCSI Logo" class="mx-auto mt-8">
     <div class="mr-20">
         <p class="text-white text-xl">The Loyola Blakefield Cyber Science Initiative (LBCSI) is a student-run group directed by Steve Morrill, Director of Technology & Cyber Science at Loyola Blakefield. The vision for this competition is to bring new opportunities to all students in the country, in addition to connecting the business world with a diverse talent pool. LBCSI has become the international leader in Cyber education for students in middle and high school.</p>
-        <button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Learn More</button>
+        <button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200"><a href="/lbcsi">Learn More</a></button>
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">Contact Us</h3>
         <p class="text-white text-xl mt-2">Head of LBCSI - <a href="mailto:smorrill@loyolablakefield.org" class="underline">Steve Morrill</a></p>
         <p class="text-white text-xl mt-2">Support Staff - <a href="mailto:lbc2staff@gmail.com" class="underline">lbc2staff@gmail.com</a></p>
