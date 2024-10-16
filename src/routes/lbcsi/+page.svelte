@@ -23,6 +23,6 @@
     <img src="/images/2023/image9.jpeg" alt="legacy" class="h-96 w-auto rounded mb-8">
     <div>
         <p class="text-white text-2xl my-8 mx-20 text-center">LBCSI is a student run initiative and directed by Steve Morrill, Head of Technology & Cyber Science at Loyola Blakefield. He has been at the school for seventeen years and started the club along with just a few other students back in 2011. With his dedication and mentorship, the club has expanded to what it is today, and without him, none of this would exist.</p>
-        <p class="text-white text-xl mt-2 text-center">Head of LBCSI - <a href="mailto:smorrill@loyolablakefield.org" class="underline">Steve Morrill</a></p>
+        <p class="text-white text-xl mt-2 text-center">Head of LBCSI - <a href="mailto:smorrill@loyolablakefield.org" class="underline hover:text-yellow-100">Steve Morrill</a></p>
     </div>
 </div>
