@@ -9,6 +9,9 @@
     }
 
     let imgNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    /** @type {import('./$types').ActionData} */
+    export let form;
   </script>
 <Navbar/>
 <div class="flex gap-16 justify-center items-center mt-8">
@@ -29,20 +32,20 @@
 <div class="mt-8 mx-20">
     <h2 class="text-yellow-200 text-4xl font-black text-center">Frequelty Asked Questions</h2>
     <div class="text-center mt-16">
-        <h3 class="text-yellow-100 text-2xl font-bold mt-4">Lorem Ipsum</h3>
-        <p class="text-white text-xl mt-2">Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum aptent diam bibendum pellentesque himenaeos libero nunc amet. Adipiscing luctus vel scelerisque diam lacinia ad rutrum duis.</p>
+        <h3 class="text-yellow-100 text-2xl font-bold mt-4">What division should I register for?</h3>
+        <p class="text-white text-xl mt-2">If you have no experience whatsoever, you should register for the beginner division. If you have done a CTF (Capture the Flag) competition before, you should register for the "I've done CTFs Before" division.</p>
     </div>
     <div class="text-center mt-8">
-        <h3 class="text-yellow-100 text-2xl font-bold mt-4">Lorem Ipsum</h3>
-        <p class="text-white text-xl mt-2">Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum aptent diam bibendum pellentesque himenaeos libero nunc amet. Adipiscing luctus vel scelerisque diam lacinia ad rutrum duis.</p>
+        <h3 class="text-yellow-100 text-2xl font-bold mt-4">Do I need to bring anything?</h3>
+        <p class="text-white text-xl mt-2">Just a laptop and a charger. Food will be provided.</p>
     </div> 
     <div class="text-center mt-8">
-        <h3 class="text-yellow-100 text-2xl font-bold mt-4">Lorem Ipsum</h3>
-        <p class="text-white text-xl mt-2">Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum aptent diam bibendum pellentesque himenaeos libero nunc amet. Adipiscing luctus vel scelerisque diam lacinia ad rutrum duis.</p>
+        <h3 class="text-yellow-100 text-2xl font-bold mt-4">How much does it cost?</h3>
+        <p class="text-white text-xl mt-2">The competition is entirely FREE, all thanks to our sponsors.</p>
     </div>
     <div class="text-center mt-8 mb-20">
-        <h3 class="text-yellow-100 text-2xl font-bold mt-4">Lorem Ipsum</h3>
-        <p class="text-white text-xl mt-2">Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum aptent diam bibendum pellentesque himenaeos libero nunc amet. Adipiscing luctus vel scelerisque diam lacinia ad rutrum duis.</p>
+        <h3 class="text-yellow-100 text-2xl font-bold mt-4">Do I need any experience?</h3>
+        <p class="text-white text-xl mt-2">No.</p>
     </div> 
 </div>
 <div class="bg-blue-100">
@@ -78,20 +81,23 @@
         <p class="text-white text-xl mt-2">LBC2 Website Design - <a href="mailto:cwnazelrod2025@loyolablakefield.org" class="underline hover:text-yellow-100">Casey Nazelrod</a></p>
     </div>
 </div>
-<div class="bg-blue-100">
+<!-- <div class="bg-blue-100">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
     <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Sponsors</h2>
     <h3 class="text-yellow-100 text-2xl font-bold mt-4 mx-20 text-center">Thank you to our sponsors. If you are interested in sponsoring LBC2, please contact <a href="mailto:smorrill@loyolablakefield.org" class="underline">Steve Morrill</a>.</h3>
     <p class="text-white text-xl mt-4 mx-20 text-center">WORK IN PROGRESS</p>
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
-</div>
-<h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Newsletter</h2>
-<form>
-    <div class="flex flex-col gap-4 justify-center items-center my-8">
-        <div class="flex flex-col items-start">
-            <label for="email" class="text-yellow-200 text-xl text-right">Email</label>
-            <input type="email" placeholder="Email Address" class="bg-yellow-100 text-white p-3 rounded-lg w-120">
+</div> -->
+<div class="bg-blue-100">
+    <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
+    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Newsletter</h2>
+    <form method='POST' action='?/newsletter'>
+        <div class="flex flex-col gap-4 justify-center items-center py-8">
+            <div class="flex flex-col items-start">
+                <label for="email" class="text-yellow-200 text-xl text-right">Email</label>
+                <input type="email" placeholder="Email Address" class="bg-yellow-100 text-white p-3 rounded-lg w-120">
+            </div>
+            <button class="bg-yellow-200 text-blue-100 text-xl font-black p-2 px-16 rounded-lg border-4 border-yellow-200 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Join Newsletter</button>
         </div>
-        <button class="bg-yellow-200 text-blue-100 text-xl font-black p-2 px-16 rounded-lg border-4 border-yellow-200 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Join Newsletter</button>
-    </div>
-</form>
+    </form>
+</div>
