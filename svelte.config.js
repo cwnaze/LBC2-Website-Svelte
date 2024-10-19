@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import fs from 'fs';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +7,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	server: {
+	kit: {
 		// vite: {
 		// 	optimizeDeps: {
 		// 	  include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
@@ -17,11 +16,7 @@ const config = {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		https: {
-			key: fs.readFileSync('cert/key.pem'),
-			cert: fs.readFileSync('cert/cert.pem')
-		},
-		proxy: {}
+		adapter: adapter()
 	}
 };
 

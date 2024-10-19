@@ -12,7 +12,7 @@
 
     /** @type {import('./$types').ActionData} */
     export let form;
-  </script>
+</script>
 <Navbar/>
 <div class="flex gap-16 justify-center items-center mt-8">
     <div class="flex flex-col items-center">
