@@ -29,9 +29,9 @@
     </ul>
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
 </div>
-<div class="grid grid-cols-2 mx-20 gap-16 items-center justify-center mb-8">
+<div class="min-lg:grid grid-cols-2 mx-20 gap-16 items-center justify-center mb-8">
     <div class="p-16">
-        <img src="/images/IOT.jpeg" alt="IOT City" class="h-auto rounded">
+        <img src="/images/IOT.jpeg" alt="IOT City" class="h-auto rounded max-lg:hidden">
     </div>
     <div>
         <h2 class="text-yellow-200 text-4xl font-black m-8 text-center">IOT City</h2>

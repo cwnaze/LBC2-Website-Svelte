@@ -24,7 +24,7 @@
                 {#if form?.e_level === 'advanced'}<option value='advanced' selected>I've Done CTFs Before</option>
                 {:else}<option value='advanced'>I've Done CTFs Before</option>{/if}
         </div>
-        <div class='flex gap-10'>
+        <div class='flex gap-10 max-lg:flex-col max-lg:gap-6'>
             <div class='flex flex-col'>
                 <label for='tl-name'>Team Lead Name</label>
                 <input id='tl-name' placeholder='John Doe' name='tl-name' type='text' value={form?.tl_name ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
