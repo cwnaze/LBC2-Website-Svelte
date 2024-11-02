@@ -14,8 +14,8 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	server: {
 		https: {
-			key: fs.readFileSync(path.resolve(__dirname, 'cert', 'localhost.key')),
-			cert: fs.readFileSync(path.resolve(__dirname, 'cert', 'localhost.crt'))
+			key: fs.readFileSync(path.resolve(__dirname, 'cert', '/etc/letsencrypt/live/lbc2.org/privkey.pem')),
+			cert: fs.readFileSync(path.resolve(__dirname, 'cert', '/etc/letsencrypt/live/lbc2.org/cert.pem'))
 		},
 		port: 443,
 		proxy: {}

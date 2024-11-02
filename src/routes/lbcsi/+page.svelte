@@ -12,14 +12,14 @@
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180 mt-8">
 </div>
 
-<div class="min-lg:flex mx-20 items-center justify-center">
+<div class="max-lg:block flex mx-20 items-center justify-center">
     <div>
         <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Legacy</h2>
         <p class="text-white text-2xl my-8 mx-20 text-center">This year LBCSI celebrates its 11th year. The Loyola Blakefield Cyber initiative has given many students everlasting opportunities and memories, as well as expanding into a community of growth. With well over a hundred members, the club has continued the interest of cyber science through yearly outreach and rapid development. The leadership team’s hard work and commitment have kept production run smoothly, especially during Cyber Patriot and LBC2 season. This year marks the 7th LBC2 student run cyber competition.</p>
     </div>
     <img src="/images/lbcsiLogo.png" alt="legacy" class="h-auto w-screen max-lg:hidden">
 </div>
-<div class="min-lg:flex mx-20 items-center justify-center">
+<div class="max-lg:block flex mx-20 items-center justify-center">
     <img src="/images/2023/image9.jpeg" alt="legacy" class="h-96 w-auto rounded mb-8 max-lg:hidden">
     <div>
         <p class="text-white text-2xl my-8 mx-20 text-center">LBCSI is a student run initiative and directed by Steve Morrill, Head of Technology & Cyber Science at Loyola Blakefield. He has been at the school for seventeen years and started the club along with just a few other students back in 2011. With his dedication and mentorship, the club has expanded to what it is today, and without him, none of this would exist.</p>
