@@ -17,6 +17,7 @@ export default defineConfig({
 			key: fs.readFileSync(path.resolve(__dirname, 'cert', 'localhost.key')),
 			cert: fs.readFileSync(path.resolve(__dirname, 'cert', 'localhost.crt'))
 		},
-		port: 443 // You can change the port if needed
+		port: 443,
+		proxy: {}
 	}
 });

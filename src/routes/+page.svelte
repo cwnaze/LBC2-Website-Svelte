@@ -98,7 +98,7 @@
                 <input type="email" placeholder="Email Address" class="bg-yellow-100 text-blue-200 p-3 rounded-lg w-120">
                 {#if form?.email_missing}<p class='text-error'>Email is required</p>{/if}
                 {#if form?.email_invalid}<p class='text-error'>Enter a valid email</p>{/if}
-                {#if form?.email_exists}<p class='text-error'>Email has already joined the newsletter</p>{/if}=
+                {#if form?.email_exists}<p class='text-error'>Email has already joined the newsletter</p>{/if}
             </div>
             <button class="bg-yellow-200 text-blue-100 text-xl font-black p-2 px-16 rounded-lg border-4 border-yellow-200 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200">Join Newsletter</button>
         </div>
