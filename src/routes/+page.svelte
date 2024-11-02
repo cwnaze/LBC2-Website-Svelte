@@ -20,7 +20,7 @@
         <p class="text-white text-3xl text-center mt-8">March 29th, 2025 @ Loyola Blakefield</p>
         <button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200"><a href="/sign-up">Sign Up</a></button>
     </div>
-    <img src="/images/DSC00615.JPG" alt="Hero Image" class="h-96 w-auto rounded">
+    <img src="/images/DSC00615.JPG" alt="Hero Image" class="h-96 w-auto rounded max-lg:hidden">
 </div>
 <div class="bg-blue-100 mt-8">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
@@ -69,9 +69,9 @@
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
 </div>
 <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Loyola Blakefield CSI</h2>
-<div class="grid grid-cols-2 justify-center items-center text-center">
-    <img src="/images/lbcsiLogo.png" alt="LBCSI Logo" class="mx-auto mt-8">
-    <div class="mr-20">
+<div class="grid grid-cols-2 justify-center items-center text-center max-lg:grid-cols-none">
+    <img src="/images/lbcsiLogo.png" alt="LBCSI Logo" class="mx-auto mt-8 max-lg:hidden">
+    <div class="mr-20 max-lg:mx-20">
         <p class="text-white text-xl">The Loyola Blakefield Cyber Science Initiative (LBCSI) is a student-run group directed by Steve Morrill, Director of Technology & Cyber Science at Loyola Blakefield. The vision for this competition is to bring new opportunities to all students in the country, in addition to connecting the business world with a diverse talent pool. LBCSI has become the international leader in Cyber education for students in middle and high school.</p>
         <button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200"><a href="/lbcsi">Learn More</a></button>
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">Contact Us</h3>
@@ -95,7 +95,7 @@
         <div class="flex flex-col gap-4 justify-center items-center py-8">
             <div class="flex flex-col items-start">
                 <label for="email" class="text-yellow-200 text-xl text-right">Email</label>
-                <input type="email" placeholder="Email Address" class="bg-yellow-100 text-white p-3 rounded-lg w-120">
+                <input type="email" placeholder="Email Address" class="bg-yellow-100 text-blue-200 p-3 rounded-lg w-120">
                 {#if form?.email_missing}<p class='text-error'>Email is required</p>{/if}
                 {#if form?.email_invalid}<p class='text-error'>Enter a valid email</p>{/if}
                 {#if form?.email_exists}<p class='text-error'>Email has already joined the newsletter</p>{/if}=
