@@ -25,15 +25,19 @@
 <div class="bg-blue-100 mt-8">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
     <div class="text-white text-center text-lg font-light italic bg-blue-200 my-6 mx-20 p-8 rounded border-l-4 border-yellow-200">
-        <p>“Some of our students were feeling pretty intimidated at the beginning of the day, and by the end they had gained a lot of confidence and had a lot of fun largely due to help and encouragement from the yellow shirts” – Faculty Member</p>
+        <p>“Some of our students were feeling pretty intimidated at the beginning of the day, and by the end they had gained a lot of confidence and had a lot of fun largely due to help and encouragement from the yellow shirts.” – Faculty Member</p>
     </div>
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
 </div>
 <div class="mt-8 mx-20">
-    <h2 class="text-yellow-200 text-4xl font-black text-center">Frequelty Asked Questions</h2>
+    <h2 class="text-yellow-200 text-4xl font-black text-center">Frequently Asked Questions</h2>
     <div class="text-center mt-16">
+        <h3 class="text-yellow-100 text-2xl font-bold mt-4">What is LBC2?</h3>
+        <p class="text-white text-xl mt-2">LBC2 is a cybersecurity competition run by Loyola's cybersecurity program. Competitors will learn cryptography skills, digital forensics, systems hardening, and much more.</p>
+    </div>
+    <div class="text-center mt-8">
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">What division should I register for?</h3>
-        <p class="text-white text-xl mt-2">If you have no experience whatsoever, you should register for the beginner division. If you have done a CTF (Capture the Flag) competition before, you should register for the "I've done CTFs Before" division.</p>
+        <p class="text-white text-xl mt-2">If you're new to CTF (Capture the Flag) challenges, you should register for the beginner division. If you have experience with CTFs, you should register for the "I've Done CTFs Before" division.</p>
     </div>
     <div class="text-center mt-8">
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">Do I need to bring anything?</h3>
@@ -50,7 +54,7 @@
 </div>
 <div class="bg-blue-100">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
-    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Check Out Our Photos From Last Competition</h2>
+    <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Check Out our Photos from Last Competition!</h2>
     <Carousel
       bind:this={carousel}
       particlesToShow={5}
@@ -78,7 +82,7 @@
         <p class="text-white text-xl mt-2">Head of LBCSI - <a href="mailto:smorrill@loyolablakefield.org" class="underline hover:text-yellow-100">Steve Morrill</a></p>
         <p class="text-white text-xl mt-2">Support Staff - <a href="mailto:lbc2staff@gmail.com" class="underline hover:text-yellow-100">lbc2staff@gmail.com</a></p>
         <p class="text-white text-xl mt-2">LBC2 Logo Design - <a href="mailto:rcwachter2026@loyolablakefield.org" class="underline hover:text-yellow-100">Ryan Wachter</a></p>
-        <p class="text-white text-xl mt-2">LBC2 Website Design - <a href="mailto:cwnazelrod2025@loyolablakefield.org" class="underline hover:text-yellow-100">Casey Nazelrod</a></p>
+        <p class="text-white text-xl mt-2">LBC2 Website Design - <a href="mailto:cwnazelrod2025@loyolablakefield.org" class="underline hover:text-yellow-100">Casey Nazelrod</a> and <a href="mailto:emomron2025@loyolablakefield.org" class="underline hover:text-yellow-100">Emmett Omron</a></p>
     </div>
 </div>
 <!-- <div class="bg-blue-100">
