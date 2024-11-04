@@ -71,7 +71,7 @@
 <div class="bg-blue-100">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen mt-8">
     <h2 class="text-yellow-200 text-4xl font-black my-8 mx-20 text-center">LBC2 2021</h2>
-    <p class="mx-20 text-center text-white text-xl">2021 marked the fourth year of LBC2. This competition was hosted online, due to COVID-19 restrictions. This made organizing and attending a little more difficult. This challenge was, created, tested, and run by students, led by Matt and Chris Fleschner. Despite the difficulty, The day was another success, with 34 teams attending, to compete, learn, and grow.</p>
+    <p class="mx-20 text-center text-white text-xl">2021 marked the fourth year of LBC2. This competition was hosted online, due to COVID-19 restrictions. This made organizing and attending a little more difficult. This challenge was, created, tested, and run by students, led by Matt and Chris Fleschner. Despite the difficulty, the day was another success, with 34 teams attending, to compete, learn, and grow.</p>
     <p class="mx-20 text-center text-white text-xl mt-8">We were also graced by the presence of two speakers, LaLisha Hurt, Deputy CISO of GDIT, And Diane Janosek, Senior Legal Advisor for Women in Cybersecurity Critical Infrastructure Sector and Senior Advisor for Women in Cybersecurity Mid-Atlantic Affiliate.</p>
     <div class="flex flex-col justify-center items-center my-16 gap-4">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FsJ_bewRntQ?si=fRXLpSzIDPpqy9ci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
