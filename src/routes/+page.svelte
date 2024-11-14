@@ -1,6 +1,7 @@
 <script lang='ts'>
     import Carousel from 'svelte-carousel';
     import Navbar from '$lib/components/navbar.svelte';
+    import { enhance } from '$app/forms';
   
     let carousel: any; // for calling methods of the carousel instance
     
@@ -95,11 +96,11 @@
 <div class="bg-blue-100">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
     <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Newsletter</h2>
-    <form method='POST' action='?/newsletter'>
+    <form method='POST' action='?/newsletter' use:enhance>
         <div class="flex flex-col gap-4 justify-center items-center py-8">
             <div class="flex flex-col items-start">
                 <label for="email" class="text-yellow-200 text-xl text-right">Email</label>
-                <input type="email" placeholder="Email Address" class="bg-yellow-100 text-blue-200 p-3 rounded-lg w-120">
+                <input type="email" id='email' name='email' placeholder="Email Address" class="bg-yellow-100 text-blue-200 p-3 rounded-lg w-120">
                 {#if form?.email_missing}<p class='text-error'>Email is required</p>{/if}
                 {#if form?.email_invalid}<p class='text-error'>Enter a valid email</p>{/if}
                 {#if form?.email_exists}<p class='text-error'>Email has already joined the newsletter</p>{/if}
