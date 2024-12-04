@@ -4,7 +4,7 @@
 
 <Navbar />
 <h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">About LBCSI</h1>
-<p class="text-white text-2xl my-8 mx-20 text-center">The Loyola Blakefield Cyber Science Initiative practices digital awareness and safety as well as the professional and ethical implementation of cybersecurity skills. It provides students with real world skills required by today’s fast-growing employers and offers advanced opportunities to apply those skills in the classroom. This program further enables students to test-drive their future careers by participating in many student-led projects, national competitions, and local internship opportunities. LBCSI fosters the talents and ambitions of its students, preparing them to excel in the professional field. Loyola Blakefield Cyber Science gives students opportunities to learn and grow on an unparalleled level.</p>
+<p class="text-white text-2xl my-8 mx-20 text-center">The Loyola Blakefield Cyber Science Initiative teaches digital awareness and safety as well as the professional and ethical implementation of cybersecurity skills. It provides students with real world skills required by today’s fast-growing employers and offers advanced opportunities to apply those skills in the classroom. This program further enables students to test-drive their future careers by participating in many student-led projects, national competitions, and local internship opportunities. LBCSI fosters the talents and ambitions of its students, preparing them to excel in the professional field.</p>
 <div class="bg-blue-100 flex flex-col items-center justify-center">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
     <p class="text-white text-xl mt-8 mb-4 mx-20 text-center">Check out our 10 years of LBCSI video!</p>
@@ -15,7 +15,7 @@
 <div class="max-lg:block flex mx-20 items-center justify-center">
     <div>
         <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Legacy</h2>
-        <p class="text-white text-2xl my-8 mx-20 text-center">This year, LBCSI celebrates its thirteenth anniversary. The Loyola Blakefield Cyber Science Initiative has given many students everlasting opportunities and memories, as well as expanding into a community of growth. With well over a hundred members, the club has continued the interest of cyber science through yearly outreach and rapid development. The leadership team’s hard work and commitment have kept production run smoothly, especially during Cyber Patriot and LBC2 season. This year marks the 8th LBC2 student run cyber competition.</p>
+        <p class="text-white text-2xl my-8 mx-20 text-center">This year, LBCSI celebrates its thirteenth anniversary. The Loyola Blakefield Cyber Science Initiative has given many students everlasting memories and effective opportunities, as well as expanding into a community reaching far beyond high school. With well over a hundred members, the club has continued fostering interest in cyber science through yearly outreach and rapid development. The leadership team’s hard work and commitment has kept production running smoothly, especially during Cyber Patriot and LBC2 season. This year marks the eighth LBC2 competition.</p>
     </div>
     <img src="/images/lbcsiLogo.png" alt="legacy" class="h-auto w-screen max-lg:hidden">
 </div>
