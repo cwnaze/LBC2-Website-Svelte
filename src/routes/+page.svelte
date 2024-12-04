@@ -86,15 +86,14 @@
         <p class="text-white text-xl mt-2">LBC2 Website Design - <a href="mailto:cwnazelrod2025@loyolablakefield.org" class="underline hover:text-yellow-100">Casey Nazelrod</a> and <a href="mailto:emomron2025@loyolablakefield.org" class="underline hover:text-yellow-100">Emmett Omron</a></p>
     </div>
 </div>
-<!-- <div class="bg-blue-100">
+<div class="bg-blue-100">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
     <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Sponsors</h2>
     <h3 class="text-yellow-100 text-2xl font-bold mt-4 mx-20 text-center">Thank you to our sponsors. If you are interested in sponsoring LBC2, please contact <a href="mailto:smorrill@loyolablakefield.org" class="underline">Steve Morrill</a>.</h3>
-    <p class="text-white text-xl mt-4 mx-20 text-center">WORK IN PROGRESS</p>
+    <img src="/images/sponsors.png" alt="sponsors" class="mx-auto mt-8">
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
-</div> -->
-<div class="bg-blue-100">
-    <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen">
+</div>
+<div>
     <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Newsletter</h2>
     <form method='POST' action='?/newsletter' use:enhance>
         <div class="flex flex-col gap-4 justify-center items-center py-8">
