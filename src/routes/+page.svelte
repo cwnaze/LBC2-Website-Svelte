@@ -42,7 +42,7 @@
     </div>
     <div class="text-center mt-8">
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">Do I need to bring anything?</h3>
-        <p class="text-white text-xl mt-2">Just a laptop and a charger. Food will be provided.</p>
+        <p class="text-white text-xl mt-2">Beginner competitors will just need a laptop and a charger. Advanced ("I've Done CTFs Before") competitors will need Kali Linux tools for many challenges. Food will be provided.</p>
     </div> 
     <div class="text-center mt-8">
         <h3 class="text-yellow-100 text-2xl font-bold mt-4">How much does it cost?</h3>
