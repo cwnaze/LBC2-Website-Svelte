@@ -38,3 +38,11 @@
         <p class=" text-center text-white text-xl mt-2 mb-8">IoT (Internet of Things) is how different appliances, or things, connect and communicate with each other. This can include your home security camera, phone, and even your toaster! IoT is becoming increasingly relevant as more household devices become "smart", and will only grow more so. LBC2's IoT City challenges consist of six separate Capture the Flag-style challenges with an IoT twist. Ranging in difficulty from Intro to Advanced, the challenges test competitors’ knowledge of both basic cybersecurity and IoT elements. Last year, we featured a series of IOT-themed challenges revolving around common industrial “things”, such as traffic lights, billboards, and a water tower. We're working on new and exciting content to add to the city, so stay tuned!</p>
     </div>
 </div>
+<div class="max-lg:block grid grid-cols-2 mx-20 gap-16 items-center justify-center mb-8">
+    <div>
+        <h2 class="text-yellow-200 text-4xl font-black m-8 text-center">NCF Escape Room</h2>
+        <p class=" text-center text-white text-xl mt-2 mb-8">This year, LBC2 will host the National Cryptologic Foundation's Cyber Escape Room. Competitors will solve cryptologic clues and puzzles to break into a computer under a time restraint. To learn more about what the National Cryptologic Foundation does, go to <a href="https://cryptologicfoundation.org/" class="underline hover:text-yellow-100">cryptologicfoundation.org</a></div>
+    <div class="p-16">
+        <img src="/images/escape-room.jpg" alt="NCF Escape Room" class="h-auto rounded max-lg:hidden">
+    </div>
+</div>
