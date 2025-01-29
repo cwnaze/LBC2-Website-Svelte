@@ -41,7 +41,7 @@
 <div class="max-lg:block grid grid-cols-2 mx-20 gap-16 items-center justify-center mb-8">
     <div>
         <h2 class="text-yellow-200 text-4xl font-black m-8 text-center">NCF Escape Room</h2>
-        <p class=" text-center text-white text-xl mt-2 mb-8">This year, LBC2 will host the National Cryptologic Foundation's Cyber Escape Room. Competitors will solve cryptologic clues and puzzles to break into a computer under a time restraint. To learn more about what the National Cryptologic Foundation does, go to <a href="https://cryptologicfoundation.org/" class="underline hover:text-yellow-100">cryptologicfoundation.org</a></div>
+        <p class=" text-center text-white text-xl mt-2 mb-8">This year, LBC2 will host the National Cryptologic Foundation's Cyber Escape Room. Competitors will solve cryptologic clues and puzzles to break into a computer under a time restraint. To learn more about what the National Cryptologic Foundation does, go to <a href="https://cryptologicfoundation.org/" class="underline hover:text-yellow-100">cryptologicfoundation.org</a>.</div>
     <div class="p-16">
         <img src="/images/escape-room.jpg" alt="NCF Escape Room" class="h-auto rounded max-lg:hidden">
     </div>
