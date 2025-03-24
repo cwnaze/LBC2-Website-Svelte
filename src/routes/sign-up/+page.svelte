@@ -1,62 +1,84 @@
-<script lang="ts">
-    import Navbar from "$lib/components/navbar.svelte";
+import { createClient } from '@supabase/supabase-js'
+import { env } from '$env/dynamic/private';
+import { fail, redirect, type Actions } from '@sveltejs/kit';
 
-    /** @type {import('./$types').ActionData} */
-    export let form;
-</script>
+const url:string = String(env.SUPABASE_URL);
+const key:string = String(env.SUPABASE_KEY);
 
-<Navbar />
+export const _supabase = createClient(url, key)
 
-<h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Registration is Closed!</h1>
-<p class="text-white text-xl mt-8 mb-4 mx-20 text-center">LBC2 registration is now closed. Thank you to everyone who signed up, and we can't wait to see you there!</p>
-<!-- <h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Competitor Registration</h1>
-<p class="text-white text-xl mt-8 mb-4 mx-20 text-center">Your team can have up to FOUR members. Only the team leader should register the team and its members (first and last names). All team members MUST be in Grades 8th-12th. Any team changes should be reported to <a href="mailto:lbc2staff@gmail.com" class="underline hover:text-yellow-100">lbc2staff@gmail.com</a></p>
-<form method='POST' action='?/register' class='text-yellow-200 flex flex-col justify-center items-center text-2xl gap-6'>
-    <div class='flex flex-col gap-6 my-5'>
-        <div class='flex flex-col'>
-            <label for='team-name'>Team Name</label>
-            <input id='team-name' placeholder='John Doe Team' name='team-name' type='text' value={form?.t_name ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
-            {#if form?.t_name_missing}<p class='text-error'>Team name is required</p>{/if}
-            {#if form?.t_name_exists}<p class='text-error'>Team name already exists</p>{/if}
-        </div>
-        <div class='flex flex-col'>
-            <label for='experience-level'>Experience Level</label>
-            <select id='experience-level' name='experience-level' class='bg-yellow-100 rounded-lg text-blue-100 p-3'>
-                <option value='beginner'>Beginner</option>
-                {#if form?.e_level === 'advanced'}<option value='advanced' selected>I've Done CTFs Before</option>
-                {:else}<option value='advanced'>I've Done CTFs Before</option>{/if}
-        </div>
-        <div class='flex gap-10 max-lg:flex-col max-lg:gap-6'>
-            <div class='flex flex-col'>
-                <label for='tl-name'>Team Lead Name</label>
-                <input id='tl-name' placeholder='John Doe' name='tl-name' type='text' value={form?.tl_name ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
-                {#if form?.tl_name_missing}<p class='text-error'>Team lead name is required</p>{/if}
-                {#if form?.tl_name_exists}<p class='text-error'>Team lead is already registered</p>{/if}
-            </div>
-            <div class='flex flex-col'>
-                <label for='tl-school'>Team Lead School</label>
-                <input id='tl-school' placeholder='John Doe High' name='tl-school' type='text' value={form?.tl_school ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
-                {#if form?.tl_school_missing}<p class='text-error'>Team lead school is required</p>{/if}
-            </div>
-            <div class='flex flex-col'>
-                <label for='tl-email'>Team Lead Email</label>
-                <input id='tl-email' placeholder='jdoe@mail.com' name='tl-email' type='text' value={form?.tl_email ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'/>
-                {#if form?.tl_email_missing}<p class='text-error'>Team lead email is required</p>{/if}
-                {#if form?.tl_email_invalid}<p class='text-error'>Invalid email</p>{/if}
-            </div>
-        </div>
-        <div class='flex flex-col'>
-            <label for='member-2'>Team Member 2</label>
-            <input id='email' placeholder='James Doe' name='member-2' type='text' value={form?.member_2 ?? ''} class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'>
-        </div>
-        <div class='flex flex-col'>
-            <label for='member-3'>Team Member 3</label>
-            <input id='member-3' placeholder='Jennifer Doe' name='member-3' type='text' class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'>
-        </div>
-        <div class='flex flex-col'>
-            <label for='member-4'>Team Member 4</label>
-            <input id='member-4' placeholder='Jeffrey Doe' name='member-4' type='text' class='bg-yellow-100 rounded-lg text-blue-100 p-3 placeholder:text-blue-placeholder'>
-        </div>
-        <button class='bg-yellow-200 text-blue-100 font-bold mx-auto p-3 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200'>Register</button>
-    </div>
-</form> -->
+
+/** @type {import('./$types').Actions} */
+
+export const actions: Actions = {
+    register: async ({ cookies, request }) => {
+        const data: FormData = await request.formData();
+
+        const t_name: string = data.get('team-name')?.toString() ?? '';
+        const e_level: string = data.get('experience-level')?.toString() ?? '';
+        const tl_name: string = data.get('tl-name')?.toString() ?? '';
+        const tl_school: string = data.get('tl-school')?.toString() ?? '';
+        const tl_email: string = data.get('tl-email')?.toString() ?? '';
+        const member_2: string = data.get('member-2')?.toString() ?? '';
+        const member_3: string = data.get('member-3')?.toString() ?? '';
+        const member_4: string = data.get('member-4')?.toString() ?? '';
+
+        if(t_name === '') return fail(400, {e_level, tl_name, tl_school, tl_email, member_2, member_3, member_4, t_name_missing: true});
+        
+        const { data: advanced_teams, error: advanced_error } = await _supabase
+            .from('advanced')
+            .select('team_name')
+            .eq('team_name', t_name);
+        
+        const { data: beginner_teams, error: beginner_error } = await _supabase
+            .from('beginner')
+            .select('team_name')
+            .eq('team_name', t_name);
+        
+        if (advanced_error || beginner_error) {
+            return fail(500, { message: 'Database query error' });
+        }
+        
+        if (advanced_teams.length > 0 || beginner_teams.length > 0) {
+            return fail(400, { t_name, e_level, tl_name, tl_school, tl_email, member_2, member_3, member_4, t_name_exists: true });
+        }
+        
+        if (tl_name === '') return fail(400, { t_name, e_level, tl_school, tl_email, member_2, member_3, member_4, tl_name_missing: true });
+        
+        const { data: advanced_tl, error: advanced_tl_error } = await _supabase
+            .from('advanced')
+            .select('team_lead_name')
+            .eq('team_lead_name', tl_name);
+        
+        const { data: beginner_tl, error: beginner_tl_error } = await _supabase
+            .from('beginner')
+            .select('team_lead_name')
+            .eq('team_lead_name', tl_name);
+        
+        if (advanced_tl_error || beginner_tl_error) {
+            return fail(500, { message: 'Database query error' });
+        }
+        
+        if (advanced_tl.length > 0 || beginner_tl.length > 0) {
+            return fail(400, { t_name, e_level, tl_name, tl_school, tl_email, member_2, member_3, member_4, tl_name_exists: true });
+        }
+        
+        if (tl_school === '') return fail(400, { t_name, e_level, tl_name, tl_email, member_2, member_3, member_4, tl_school_missing: true });
+        if (tl_email === '') return fail(400, { t_name, e_level, tl_name, tl_school, member_2, member_3, member_4, tl_email_missing: true });
+        if (tl_email.indexOf('@') === -1 || tl_email.indexOf('.') === -1) return fail(400, { t_name, e_level, tl_name, tl_school, tl_email, member_2, member_3, member_4, tl_email_invalid: true });
+        
+        const table = e_level === 'beginner' ? 'beginner' : 'advanced';
+        
+        const { error: insert_error } = await _supabase
+            .from(table)
+            .insert([
+            { team_name: t_name, team_lead_name: tl_name, team_lead_school: tl_school, team_lead_email: tl_email, member_2, member_3, member_4 }
+            ]);
+        
+        if (insert_error) {
+            return fail(500, { message: 'Database insert error' });
+        }
+        
+        throw redirect(302, '/sign-up/success');
+    }
+};
