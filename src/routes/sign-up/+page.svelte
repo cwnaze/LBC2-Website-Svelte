@@ -7,9 +7,9 @@
 
 <Navbar />
 
-<!-- <h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Registration is Closed!</h1>
-<p class="text-white text-xl mt-8 mb-4 mx-20 text-center">LBC2 registration is now closed. Thank you to everyone who signed up, and we can't wait to see you there!</p> -->
-<h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Competitor Registration</h1>
+<h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Registration is Closed!</h1>
+<p class="text-white text-xl mt-8 mb-4 mx-20 text-center">LBC2 registration is now closed. Thank you to everyone who signed up, and we can't wait to see you there!</p>
+<!-- <h1 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">Competitor Registration</h1>
 <p class="text-white text-xl mt-8 mb-4 mx-20 text-center">Your team can have up to FOUR members. Only the team leader should register the team and its members (first and last names). All team members MUST be in Grades 8th-12th. Any team changes should be reported to <a href="mailto:lbc2staff@gmail.com" class="underline hover:text-yellow-100">lbc2staff@gmail.com</a></p>
 <form method='POST' action='?/register' class='text-yellow-200 flex flex-col justify-center items-center text-2xl gap-6'>
     <div class='flex flex-col gap-6 my-5'>
@@ -59,4 +59,4 @@
         </div>
         <button class='bg-yellow-200 text-blue-100 font-bold mx-auto p-3 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200'>Register</button>
     </div>
-</form>
+</form> -->
