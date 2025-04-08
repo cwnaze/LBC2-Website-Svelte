@@ -25,7 +25,7 @@
         <li>Computer</li>
         <li>Charger</li>
         <li>A limited number of loaner laptops will be available. If you don't own one, please email <a href="mailto:lbc2staff@gmail.com" class="underline hover:text-yellow-100">lbc2staff@gmail.com</a> to reserve one before March 29th.</li>
-        <li>A <a href="kali.org" class="underline hover:text-yellow-100">Kali Linux</a> operating system or virtual machine is <b>strongly</b> recommended.</li>
+        <li>A <a href="https://www.kali.org" class="underline hover:text-yellow-100">Kali Linux</a> operating system or virtual machine is <b>strongly</b> recommended.</li>
     </ul>
     <img src="/images/wavesOpacity.svg" alt="divider" class="h-auto w-screen rotate-180">
 </div>
