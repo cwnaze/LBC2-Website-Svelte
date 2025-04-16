@@ -18,7 +18,7 @@
     bind:this={carousel}
     particlesToShow={10}
     autoplayDuration={0}
-    duration={1500}
+    duration={1800}
     autoplay
     timingFunction="linear"
     dots={false}
