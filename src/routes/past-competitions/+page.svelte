@@ -13,6 +13,24 @@
 
 <Navbar/>
 <div>
+  <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">LBC2 2025 Photos</h2>
+  <Carousel
+    bind:this={carousel}
+    particlesToShow={10}
+    autoplayDuration={0}
+    duration={1500}
+    autoplay
+    timingFunction="linear"
+    dots={false}
+    arrows={false}
+    swiping={false}
+  >
+    {#each imgNum as index}
+      <img src={`/images/2025/image${index}.jpeg`} alt={`Image ${index}`} class="my-4 object-cover rounded ml-4"/>
+    {/each}
+  </Carousel>
+</div>
+<div>
     <h2 class="text-yellow-200 text-4xl font-black mt-8 mx-20 text-center">LBC2 2024 Photos</h2>
     <Carousel
       bind:this={carousel}
