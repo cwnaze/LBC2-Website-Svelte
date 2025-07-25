@@ -18,8 +18,7 @@
 <div class="flex gap-16 justify-center items-center mt-8">
     <div class="flex flex-col items-center">
         <h1 class="text-yellow-100 text-6xl font-black text-center"><section class="bg-gradient-to-t from-yellow-200 to-yellow-100 bg-clip-text text-transparent">Loyola Blakefield</section> Cyber Challenge</h1>
-        <p class="text-white text-3xl text-center mt-8">Thank you to everyone who participated this year!</p>
-        <p class="text-white text-3xl text-center mt-8">Check back soon for details about LBC2 2026.</p>
+        <p class="text-white text-3xl text-center mt-8">March 14, 2026 @ Loyola Blakefield</p>
         <!--<button class="bg-yellow-200 text-blue-100 font-black text-xl mx-auto p-2 px-16 rounded-lg border-4 border-yellow-200 mt-6 hover:bg-blue-200 hover:text-yellow-200 hover:border-yellow-200"><a href="/sign-up">Sign Up</a></button>-->
     </div>
     <img src="/images/DSC00615.JPG" alt="Hero Image" class="h-96 w-auto rounded max-lg:hidden">
