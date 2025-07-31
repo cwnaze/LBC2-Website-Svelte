@@ -83,7 +83,7 @@
         <p class="text-white text-xl mt-2">Head of LBCSI - <a href="mailto:smorrill@loyolablakefield.org" class="underline hover:text-yellow-100">Steve Morrill</a></p>
         <p class="text-white text-xl mt-2">Support Staff - <a href="mailto:lbc2staff@gmail.com" class="underline hover:text-yellow-100">lbc2staff@gmail.com</a></p>
         <p class="text-white text-xl mt-2">LBC2 Logo Design - <a href="mailto:rcwachter2026@loyolablakefield.org" class="underline hover:text-yellow-100">Ryan Wachter</a></p>
-        <p class="text-white text-xl mt-2">LBC2 Website Design - <a href="mailto:cwnazelrod2025@loyolablakefield.org" class="underline hover:text-yellow-100">Casey Nazelrod</a> and <a href="mailto:emomron2025@loyolablakefield.org" class="underline hover:text-yellow-100">Emmett Omron</a></p>
+        <p class="text-white text-xl mt-2">LBC2 Website Design - <a href="mailto:cwnazelrod2025@loyolablakefield.org" class="underline hover:text-yellow-100">Casey Nazelrod</a>, <a href="mailto:mmkocorowski2026@loyolablakefield.org" class="underline hover:text-yellow-100">Matthew Kocorowski</a> and <a href="mailto:emomron2025@loyolablakefield.org" class="underline hover:text-yellow-100">Emmett Omron</a></p>
     </div>
 </div>
 <div class="bg-blue-100">
