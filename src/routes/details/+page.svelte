@@ -46,3 +46,13 @@
         <img src="/images/escape-room.jpg" alt="NCF Escape Room" class="h-auto rounded max-lg:hidden">
     </div>
 </div>
+<div class="mx-20 mb-16">
+    <h2 class="text-yellow-200 text-4xl font-black m-8 text-center">Schedule</h2>
+    <p class="text-center text-white text-xl mt-2">
+        Doors will open at 8:30. We will go over rules around 9:15, with a 9:30 start for the OS round.
+        The OS round will end at 11, and we will go into Lunch until 12:00.
+        The CTF / IoT City round will start at 12:10 and then go until 2:30.
+        Awards are at 2:45, and LBC2 will come to an end at 3:00.
+    </p>
+</div>
+
