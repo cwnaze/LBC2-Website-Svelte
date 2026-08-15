@@ -24,7 +24,7 @@ export default {
         'cursor': '25px'
     },
     fontFamily: {
-      sans: ['Ubuntu Mono', 'sans-serif']
+      sans: ['Source Code Pro', 'Ubuntu Mono', 'sans-serif']
     },
     extend: {
       dropShadow: {
